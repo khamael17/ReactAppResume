@@ -1,4 +1,0 @@
-{
-    "appService.defaultWebAppToDeploy": "/subscriptions/0df8089e-a192-4f79-aa34-90cddfdcdbb9/microsoft.web/sites/subscriptions/0df8089e-a192-4f79-aa34-90cddfdcdbb9/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/WEBAPPFORRESUME",
-    "appService.deploySubpath": "."
-}
