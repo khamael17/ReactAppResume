@@ -3,6 +3,7 @@ import Like from './Like';
 
 const Tour = ({ id, image, info, name, price, removeTour }) => {
   const [readMore, setReadMore] = useState(false);
+  const pe={}
   return (
    
     <article className="single-tour">

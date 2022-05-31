@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Loading from './Loading'
 import Tours from './Tours'
-
+import Navy from'./Navbare'
 
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
@@ -57,10 +57,11 @@ function App() {
   return (
     <div>
     <main >
-       <div className="title" >
-        <h2> <i><b>My resume </b></i>  </h2>
-        <div className="underline"></div>
-      </div>
+       <section >
+        <div >       
+        </div>
+        <Navy />
+      </section>
        </main>
       <Tours tours={tours}  />
    </div>
