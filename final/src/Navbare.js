@@ -1,7 +1,7 @@
 import React from 'react';
+import {GoMarkGithub} from 'react-icons/go'
 
-
-
+import {FaLinkedin,FaDownload} from 'react-icons/fa'
 
 const Navigation=()=>{
     const donne={ id: 1,
@@ -19,6 +19,7 @@ return(
       <h4 className='author'>{donne.name}</h4>
       <p className='job'>{donne.job}</p>
       <p className='info'>{donne.text}</p>
+      <div ><GoMarkGithub className='iconnav' /> <FaLinkedin className='iconnav'/><FaDownload className='iconnav'/></div>
       <div className='button-container'>
         <button className='prev-btn' >
          
