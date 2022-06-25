@@ -23,7 +23,7 @@ return(
       <div className='button-container'>
         <button className='prev-btn' >
          
-        </button>
+        </button>  
         <button className='next-btn' >
          
         </button>
