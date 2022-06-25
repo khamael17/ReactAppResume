@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {GoMarkGithub} from 'react-icons/go'
-
+import Boxm from './Boxmess'
 import {FaLinkedin,FaDownload} from 'react-icons/fa'
 
-const Navigation=()=>{
+const Navigation=({togle,Tougle})=>{
+// const Tougle=()=>{
+//    //setTogle(!togle)
+//    console.log('togle')
+// }
+
+
     const donne={ id: 1,
     name: 'Khalilou Ismael KONATE',
     job: 'Jr. Full stack developer',
@@ -14,19 +20,21 @@ return(
    <article className='review'>
       <div className='img-container'>
         <img src={donne.image} alt={donne.name} className='person-img' />
-
+   
       </div>
+        <div><input type="checkbox" id="switch" onClick={()=>Tougle()}
+                    className="checkbox" />
+        <label htmlFor="switch" className="toggle"/>
+        <p>Desktop\--------/Mobile</p>
+        </div>
+       
       <h4 className='author'>{donne.name}</h4>
       <p className='job'>{donne.job}</p>
       <p className='info'>{donne.text}</p>
+      <Boxm/>
       <div ><GoMarkGithub className='iconnav' /> <FaLinkedin className='iconnav'/><FaDownload className='iconnav'/></div>
       <div className='button-container'>
-        <button className='prev-btn' >
-         
-        </button>  
-        <button className='next-btn' >
-         
-        </button>
+       
       </div>
      
     </article>

@@ -19,7 +19,7 @@ const Tour = ({ id, image, info, name, price, removeTour }) => {
             {readMore ? 'show less' : '  Expand'}
           </button>
         </p>
-       
+         
         <Like/>
 </footer>
     </article>

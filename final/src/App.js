@@ -11,7 +11,13 @@ const url = 'https://resumeapi17.azurewebsites.net/api/ResumeInfoApi?'
 function App() {
   const [loading, setLoading] = useState(true)
   const [tours, setTours] = useState([])
+const[togle,setTogle]= useState(true)
 
+
+const Tougle=()=>{
+   setTogle(!togle)
+   console.log(togle)
+}
 
 
 
@@ -64,10 +70,10 @@ function App() {
        <section >
         <div >       
         </div>
-        <Navy />
+        <Navy Tougle={Tougle} togle={togle} />
       </section>
        </main>
-      <Tours tours={tours}  />
+      <Tours tours={tours} togle={togle} />
    </div>
   )
 }
